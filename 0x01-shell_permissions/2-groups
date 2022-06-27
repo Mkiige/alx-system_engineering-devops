@@ -1,6 +1,2 @@
 #!/bin/bash
-<<<<<<< HEAD
 whoami
-=======
-groups
->>>>>>> d11f6a1cadc229e9af5f2254a04c20148cb6f75f
