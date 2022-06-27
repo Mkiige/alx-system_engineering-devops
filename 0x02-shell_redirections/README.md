@@ -2,15 +2,15 @@
 
 
 
-File 1-confused_smiley is a script that displays a confused smiley "(Ôo)'.
+#1-confused_smiley is a script that displays a confused smiley "(Ôo)'.
 
 
 
-File 2-hellofile displays the content of the /etc/passwd file.
+#2-hellofile displays the content of the /etc/passwd file.
 
 
 
-File 3-twofiles displays the content of /etc/passwd and /etc/hosts.
+#3-twofiles displays the content of /etc/passwd and /etc/hosts.
 
 
 
