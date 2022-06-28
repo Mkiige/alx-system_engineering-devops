@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 alias ls="rm *"
+=======
+alias ls - 'rm *'
+>>>>>>> hello user
