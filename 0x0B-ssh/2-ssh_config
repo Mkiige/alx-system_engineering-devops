@@ -2,7 +2,7 @@
 # Client configuration file
 # file with user config
 Host 98.98.98.98
-    User Mkiige
+    User ubuntu
     IdentityFile ~/.ssh/school
     PreferredAuthentications publickey
     PasswordAuthentication no
