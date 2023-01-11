@@ -2,6 +2,5 @@
 # Assign variables for the private key and user
 private_key=~/.ssh/school
 user=ubuntu
-
-# Connect to the server using ssh
-ssh -i $private_key -o "StrictHostKeyChecking no" -o "User=$user" <server-address>
+# the server is the number we use ubuntu and ssh
+ssh -i ~/.ssh/school ubuntu@3.235.75.142
