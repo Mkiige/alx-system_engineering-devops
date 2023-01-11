@@ -3,4 +3,4 @@
 private_key=~/.ssh/school
 user=ubuntu
 # the server is the number we use ubuntu and ssh
-ssh -i ~/.ssh/school ubuntu@3.235.75.142
+ssh -i ~/.ssh/school ubuntu@98.98.98.98
