@@ -4,5 +4,5 @@
 Host 98.98.98.98
     User ubuntu
     IdentityFile ~/.ssh/school
-    PreferredAuthentications publickey
+    PreferredAuthentications publickey yes
     PasswordAuthentication no
