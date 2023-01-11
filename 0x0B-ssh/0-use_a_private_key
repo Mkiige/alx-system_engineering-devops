@@ -1,6 +1,3 @@
 #!/usr/bin/env bash
-# Assign variables for the private key and user
-private_key=~/.ssh/school
-user=ubuntu
-# the server is the number we use ubuntu and ssh
-ssh -i ~/.ssh/school ubuntu@98.98.98.98
+# Connects to my Holberton server.
+ssh -i ~/.ssh/school ubuntu@104.196.168.90
