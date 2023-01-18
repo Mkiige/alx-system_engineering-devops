@@ -27,7 +27,7 @@ defaults
     timeout client  10000
     timeout server  10000
 listen hbnb
-    bind :80
+    bind :100.26.243.254
     mode http
     stats enable
     stats uri /haproxy?stats
