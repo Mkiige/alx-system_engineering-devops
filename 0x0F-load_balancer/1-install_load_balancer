@@ -6,6 +6,7 @@
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install haproxy
+sudo service haproxy restart
 
 echo "ENABLED=1" >> /etc/default/haproxy
 sudo mv /etc/haproxy/haproxy.cfg{,.original}
@@ -27,7 +28,7 @@ defaults
     timeout client  10000
     timeout server  10000
 listen hbnb
-    bind 100.26.243.254
+    bind 54.197.107.167
     mode http
     stats enable
     stats uri /haproxy?stats
