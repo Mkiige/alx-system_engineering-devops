@@ -1,10 +1,3 @@
-#!/bin/bash
-
-# Check if a user argument was passed
-if [ $# -ne 1 ]; then
-  echo "Error: missing argument. Please provide a username."
-  exit 1
-fi
-
+#!/usr/bin/env bash
 # Run the whoami command under the user passed as an argument
 sudo -u $1 whoami
