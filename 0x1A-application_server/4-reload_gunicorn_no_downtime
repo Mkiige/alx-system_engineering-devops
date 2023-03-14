@@ -1,24 +1,4 @@
 #!/usr/bin/env bash
+# Gracefully reloads Gunicorn.
 
-# Get the process IDs of all Gunicorn workers
-workers=$(ps aux | grep gunicorn | grep -v grep | awk '{print $2}')
-
-# Send a graceful reload signal to each worker process
-for worker in $workers
-do
-  echo "Reloading worker $worker"
-  kill -s USR2 $worker
-done
-
-# Wait for a short time to allow the workers to finish their current requests
-sleep 5
-
-# Start new workers with the updated code
-gunicorn --workers 4 web_flask.0-hello_route:app
-
-# Send a graceful shutdown signal to each old worker process
-for worker in $workers
-do
-  echo "Shutting down worker $worker"
-  kill -s TERM $worker
-done
+pgrep gunicorn | xargs kill -HUP
