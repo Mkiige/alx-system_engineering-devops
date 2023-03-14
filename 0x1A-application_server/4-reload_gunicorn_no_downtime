@@ -1,9 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Gracefully reloads Gunicorn.
 
-# Get the process ID of gunicorn
-PID=$(pgrep gunicorn)
-
-# Gracefully restart gunicorn without downtime
-kill -s HUP $PID
-
-echo "Gunicorn restarted gracefully."
+pgrep gunicorn | xargs kill -HUP
