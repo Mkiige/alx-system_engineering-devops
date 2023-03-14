@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
-# Gracefully reloads Gunicorn.
+# Gracefully reloads all Gunicorn processes.
 
-pgrep gunicorn | xargs kill -HUP
+PGREP="/usr/bin/pgrep"
+KILL="/bin/kill"
+
+$PGREP gunicorn | while read pid
+do
+    $KILL -HUP $pid
+done
